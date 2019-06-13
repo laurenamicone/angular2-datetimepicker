@@ -1,10 +1,10 @@
-import { Angular2DatepickerPage } from './app.po';
+import { availDatepickerPage } from './app.po';
 
-describe('angular2-datetimepicker App', () => {
-  let page: Angular2DatepickerPage;
+describe('avail-datetimepicker App', () => {
+  let page: availDatepickerPage;
 
   beforeEach(() => {
-    page = new Angular2DatepickerPage();
+    page = new availDatepickerPage();
   });
 
 

@@ -1,7 +1,7 @@
 
 # Angular 2 / 4 DateTime Picker
 
-# [Documentation](http://cuppalabs.github.io/components/datepicker) | [Demos / Examples](https://cuppalabs.github.io/angular2-datetimepicker).
+# [Documentation](http://cuppalabs.github.io/components/datepicker) | [Demos / Examples](https://cuppalabs.github.io/avail-datetimepicker).
 
 ### Overview 
 
@@ -11,11 +11,11 @@ Angular 2 DateTimepicker is a cool responsive DateTimepicker component for Web a
 To get started with using the multiselect dropdown component, follow the below steps. It’s easy to integrate and just a matter of minutes.
 
 ### Installation
-- The datetimepicker package is published on the [npm](https://www.npmjs.com/package/angular2-datetimepicker) Registry. 
+- The datetimepicker package is published on the [npm](https://www.npmjs.com/package/avail-datetimepicker) Registry. 
 -  Install the package with [npm](https://www.npmjs.com): 
 
 ```js
-	npm install angular2-datetimepicker
+	npm install avail-datetimepicker
 ```
 
 ### Usage
@@ -23,7 +23,7 @@ To get started with using the multiselect dropdown component, follow the below s
 Import `AngularDateTimePickerModule` into your `AppModule`
 
 ```js
-import { AngularDateTimePickerModule } from 'angular2-datetimepicker';
+import { AngularDateTimePickerModule } from 'avail-datetimepicker';
 
 @NgModule({
   // ...
@@ -60,7 +60,7 @@ Add the following component tag in the template where your want to place the dat
 
 ```html
 
-<angular2-date-picker [(ngModel)]="date" [settings]="settings"></angular2-date-picker>
+<avail-date-picker [(ngModel)]="date" [settings]="settings"></avail-date-picker>
 
 ```
 
@@ -86,10 +86,10 @@ Define a callback method to be called on select of the date.
 
 ```html
   
-  <angular2-date-picker (onDateSelect)="onDateSelect($event)" 
+  <avail-date-picker (onDateSelect)="onDateSelect($event)" 
 			[(ngModel)]="date" 
 			[settings]="settings" >
-  </angular2-date-picker>
+  </avail-date-picker>
 
 ```
 ## Date Formats Support

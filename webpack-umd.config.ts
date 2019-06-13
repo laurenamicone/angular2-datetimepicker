@@ -8,8 +8,8 @@ const pkg = JSON.parse(fs.readFileSync('./package.json').toString());
 
 export default {
   entry: {
-    'index.umd': './src/app/angular2-datetimepicker/index.ts',
-    'index.umd.min': './src/app/angular2-datetimepicker/index.ts'
+    'index.umd': './src/app/avail-datetimepicker/index.ts',
+    'index.umd.min': './src/app/avail-datetimepicker/index.ts'
   },
   output: {
     path: path.join(__dirname, 'dist'),
@@ -37,7 +37,7 @@ export default {
             }
           },
           {
-            loader: 'angular2-template-loader'
+            loader: 'avail-template-loader'
           }
         ],
         exclude: [

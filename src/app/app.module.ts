@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { AngularDateTimePickerModule } from './angular2-datetimepicker/datepicker.module';
+import { AngularDateTimePickerModule } from './avail-datetimepicker/datepicker.module';
 import { AdsenseComponent } from './adsense.component';
 import { DatePickerExample } from './examples/datepicker';
 import { DateTimePickerExample } from './examples/datetimepicker';

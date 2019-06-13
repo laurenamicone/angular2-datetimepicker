@@ -15,10 +15,10 @@
         <div class="form-group">
             <label for="name">DOB</label>
             <span style="color: red;float: right;">* required</span>
-            <angular2-date-picker [(ngModel)]="formModel.dob" 
+            <avail-date-picker [(ngModel)]="formModel.dob" 
                                   [settings]="dobSettings" 
                                   (onDateSelect)="onDateSelect($event)" name="skills" #dob="ngModel">
-            </angular2-date-picker>
+            </avail-date-picker>
 <!--            <div [hidden]="email.valid || email.pristine" class="alert alert-danger">
                 <div [hidden]="!email.hasError('required')">Email is required</div>
                 <div [hidden]="!email.hasError('pattern')">Email format should be <small><b>joe@abc.com</b></small></div>

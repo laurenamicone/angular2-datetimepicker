@@ -1,6 +1,6 @@
 import { browser, by, element } from 'protractor';
 
-export class Angular2DatepickerPage {
+export class availDatepickerPage {
   navigateTo() {
     return browser.get('/');
   }

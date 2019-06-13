@@ -11,7 +11,7 @@ export const DATEPICKER_CONTROL_VALUE_ACCESSOR: any = {
 };
 
 @Component({
-    selector: 'angular2-date-picker',
+    selector: 'avail-date-picker',
     templateUrl: './datepicker.component.html',
     styleUrls: ['./datepicker.component.scss', './rangepicker.scss'],
     providers: [DATEPICKER_CONTROL_VALUE_ACCESSOR]

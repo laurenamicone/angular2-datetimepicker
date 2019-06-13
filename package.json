@@ -1,12 +1,12 @@
 {
-  "name": "angular2-datetimepicker",
+  "name": "avail-datetimepicker",
   "version": "1.1.1",
   "description": "Angular 2 or 4 datetime picker component",
   "keywords": [
-    "angular2 datepicker",
-    "angular2 datetimepicker",
-    "angular4 datepicker",
-    "angular4 datetimepicker"
+    "avail datepicker",
+    "avail datetimepicker",
+    "avail datepicker",
+    "avail datetimepicker"
   ],
   "license": "MIT",
   "angular-cli": {},
@@ -38,7 +38,7 @@
     "test": "karma start",
     "test:watch": "karma start --auto-watch --no-single-run",
     "tslint": "tslint",
-    "github-pages": "ng build --base-href /angular2-datetimepicker/"
+    "github-pages": "ng build --base-href /laurenamicone/avail-datetimepicker/"
   },
   "private": false,
   "dependencies": {
@@ -60,7 +60,7 @@
     "@types/node": "^7.0.18",
     "@types/webpack": "^2.2.15",
     "@types/webpack-env": "^1.13.0",
-    "angular2-template-loader": "^0.6.2",
+    "avail-template-loader": "^0.6.2",
     "awesome-typescript-loader": "^3.1.3",
     "codecov": "^2.2.0",
     "codelyzer": "^3.0.1",
@@ -99,9 +99,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/CuppaLabs/angular2-datetimepicker"
+    "url": "https://github.com/laurenamicone/avail-datetimepicker"
   },
   "bugs": {
-    "url": "https://github.com/CuppaLabs/angular2-datetimepicker/issues"
+    "url": "https://github.com/laurenamicone/avail-datetimepicker/issues"
   }
 }

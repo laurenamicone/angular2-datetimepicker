@@ -8,10 +8,10 @@ const exec = require('child_process').exec;
  * @see  https://github.com/ludohenin/gulp-inline-ng2-template
  */
 const INLINE_TEMPLATES = {
-  SRC: './src/app/angular2-datetimepicker/*.ts',
+  SRC: './src/app/avail-datetimepicker/*.ts',
   DIST: './tmp/src-inlined',
   CONFIG: {
-    base: '/src/app/angular2-datetimepicker',
+    base: '/src/app/avail-datetimepicker',
     target: 'es6',
     useRelativePaths: true,
     styleProcessor: compileSass
