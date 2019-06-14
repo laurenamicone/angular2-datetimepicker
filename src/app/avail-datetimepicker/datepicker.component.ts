@@ -72,6 +72,19 @@ export class DatePicker implements OnInit, ControlValueAccessor {
         if (this.settings.defaultOpen) {
             this.popover = true;
         }
+
+        window.addEventListener('input', (e) => {
+            let currentHourValue = Number(this.hourValue);
+            let currentMinValue = Number(this.minValue);
+            if(currentHourValue > 12) {
+                this.hourValue = 11;
+                this.timeViewMeridian = "PM";
+            }
+
+            if(currentMinValue > 59){
+                this.minValue = 59;
+            }
+        });
     }
     private onTouchedCallback: () => {};
     private onChangeCallback: (_: any) => {};
@@ -237,18 +250,6 @@ export class DatePicker implements OnInit, ControlValueAccessor {
         this.timeViewMeridian = val;
     }
     setTimeView() {
-        window.addEventListener('input', (e) => {
-            this.hourValue = Number(this.hourValue);
-            this.minValue = Number(this.minValue);
-            if(this.hourValue > 12) {
-                this.hourValue = 11;
-                this.timeViewMeridian = "PM";
-            }
-
-            if(this.minValue > 59){
-                this.minValue = 59;
-            }
-        });
         if (this.timeViewMeridian == "AM") {
             if (this.hourValue == 12) {
                 this.date.setHours(0);

@@ -52,10 +52,22 @@ var DatePicker = /** @class */ (function () {
         this.rangeSelected = 0;
     }
     DatePicker.prototype.ngOnInit = function () {
+        var _this = this;
         this.settings = Object.assign(this.defaultSettings, this.settings);
         if (this.settings.defaultOpen) {
             this.popover = true;
         }
+        window.addEventListener('input', function (e) {
+            var currentHourValue = Number(_this.hourValue);
+            var currentMinValue = Number(_this.minValue);
+            if (currentHourValue > 12) {
+                _this.hourValue = 11;
+                _this.timeViewMeridian = "PM";
+            }
+            if (currentMinValue > 59) {
+                _this.minValue = 59;
+            }
+        });
     };
     DatePicker.prototype.writeValue = function (value) {
         if (value !== undefined && value !== null) {
@@ -212,18 +224,6 @@ var DatePicker = /** @class */ (function () {
         this.timeViewMeridian = val;
     };
     DatePicker.prototype.setTimeView = function () {
-        var _this = this;
-        window.addEventListener('input', function (e) {
-            _this.hourValue = Number(_this.hourValue);
-            _this.minValue = Number(_this.minValue);
-            if (_this.hourValue > 12) {
-                _this.hourValue = 11;
-                _this.timeViewMeridian = "PM";
-            }
-            if (_this.minValue > 59) {
-                _this.minValue = 59;
-            }
-        });
         if (this.timeViewMeridian == "AM") {
             if (this.hourValue == 12) {
                 this.date.setHours(0);
