@@ -97,9 +97,8 @@
     "webpack-rxjs-externals": "^1.0.0",
     "zone.js": "^0.8.10"
   },
-  "files": [
-    "dist"
-  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/laurenamicone/avail-datetimepicker"
