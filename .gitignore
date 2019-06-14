@@ -8,6 +8,7 @@
 # dependencies
 /node_modules
 
+#library
 lib/
 
 # IDEs and editors
