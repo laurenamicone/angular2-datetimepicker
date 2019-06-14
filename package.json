@@ -13,7 +13,6 @@
   "author": "Pradeep Terli",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
     "e2e": "ng e2e",
     "build": "npm run build:esm && npm run build:umd && gulp copy",
     "build:esm": "gulp inline-templates && npm run ngcompile",

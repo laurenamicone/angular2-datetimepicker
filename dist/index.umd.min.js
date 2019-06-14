@@ -1,6 +1,6 @@
 /**
  * avail-datetimepicker - Angular 2 or 4 datetime picker component
- * @version v1.1.3
+ * @version v1.1.4
  * @author undefined
  * @link undefined
  * @license MIT
