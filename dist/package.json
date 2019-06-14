@@ -1,6 +1,6 @@
 {
   "name": "avail-datetimepicker",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Angular 2 or 4 datetime picker component",
   "keywords": [
     "avail datepicker",
@@ -13,7 +13,6 @@
   "author": "Pradeep Terli",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
     "e2e": "ng e2e",
     "build": "npm run build:esm && npm run build:umd && gulp copy",
     "build:esm": "gulp inline-templates && npm run ngcompile",
