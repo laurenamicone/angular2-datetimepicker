@@ -17,7 +17,7 @@ export default {
             }
           },
           {
-            loader: 'avail-template-loader'
+            loader: 'angular2-template-loader'
           }
         ],
         exclude: [
