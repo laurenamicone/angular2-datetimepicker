@@ -1,6 +1,6 @@
 {
   "name": "avail-datetimepicker",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Angular 2 or 4 datetime picker component",
   "keywords": [
     "avail datepicker",
@@ -103,34 +103,7 @@
     "url": "https://github.com/laurenamicone/avail-datetimepicker"
   },
   "files": [
-    "dist/clickOutside.d.ts",
-    "dist/clickOutside.js",
-    "dist/clickOutside.js.map",
-    "dist/clickOutside.metadata.json",
-    "dist/datepicker.component.d.ts",
-    "dist/datepicker.component.js",
-    "dist/datepicker.component.js.map",
-    "dist/datepicker.component.metadata.json",
-    "dist/datepicker.module.d.ts",
-    "dist/datepicker.module.js",
-    "dist/datepicker.module.js.map",
-    "dist/datepicker.module.metadata.json",
-    "dist/index.d.ts",
-    "dist/index.js",
-    "dist/index.js.map",
-    "dist/index.metadata.json",
-    "dist/index.umd.js",
-    "dist/index.umd.js.map",
-    "dist/index.umd.min.js",
-    "dist/index.umd.min.js.map",
-    "dist/interface.d.ts",
-    "dist/interface.js",
-    "dist/interface.js.map",
-    "dist/interface.metadata.json",
-    "dist/model.d.ts",
-    "dist/model.js",
-    "dist/model.js.map",
-    "dist/model.metadata.json"
+    "/dist"
   ],
   "bugs": {
     "url": "https://github.com/laurenamicone/avail-datetimepicker/issues"
