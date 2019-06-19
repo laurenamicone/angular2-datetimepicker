@@ -1,6 +1,6 @@
 /**
  * avail-datetimepicker - Angular 2 or 4 datetime picker component
- * @version v1.2.4
+ * @version v1.2.6
  * @author undefined
  * @link undefined
  * @license MIT
@@ -489,18 +489,18 @@ var DatePicker = /** @class */ (function () {
         this.popover = false;
         this.onDateSelect.emit(this.date);
     };
-    // togglePopover() {
-    //     if (this.popover) {
-    //         this.closepopover();
-    //     }
-    //     else {
-    //         this.popover = true;
-    //     }
-    // }
-    // closepopover() {
-    //     this.rangeSelected = 0;
-    //     this.popover = false;
-    // }
+    DatePicker.prototype.togglePopover = function () {
+        // if (this.popover) {
+        //     this.closepopover();
+        // }
+        // else {
+        //     this.popover = true;
+        // }
+    };
+    DatePicker.prototype.closepopover = function () {
+        // this.rangeSelected = 0;
+        // this.popover = false;
+    };
     DatePicker.prototype.composeDate = function (date) {
         return (date.getMonth() + 1) + '-' + date.getDate() + '-' + date.getFullYear();
     };
