@@ -78,7 +78,6 @@ export class DatePicker implements OnInit, ControlValueAccessor {
             let currentMinValue = Number(this.minValue);
             if(currentHourValue > 12) {
                 this.hourValue = 11;
-                this.timeViewMeridian = "PM";
             }
 
             if(currentMinValue > 59){
@@ -296,7 +295,7 @@ export class DatePicker implements OnInit, ControlValueAccessor {
 
             }
             if (this.settings.closeOnSelect) {
-                //this.popover = false;
+                this.popover = false;
                 this.onDateSelect.emit(this.date);
             }
         }
@@ -417,18 +416,18 @@ export class DatePicker implements OnInit, ControlValueAccessor {
         this.popover = false;
         this.onDateSelect.emit(this.date);
     }
-    togglePopover() {
-        if (this.popover) {
-            this.closepopover();
-        }
-        else {
-            this.popover = true;
-        }
-    }
-    closepopover() {
-        this.rangeSelected = 0;
-        this.popover = false;
-    }
+    // togglePopover() {
+    //     if (this.popover) {
+    //         this.closepopover();
+    //     }
+    //     else {
+    //         this.popover = true;
+    //     }
+    // }
+    // closepopover() {
+    //     this.rangeSelected = 0;
+    //     this.popover = false;
+    // }
     composeDate(date: Date) {
         return (date.getMonth() + 1) + '-' + date.getDate() + '-' + date.getFullYear();
     }
