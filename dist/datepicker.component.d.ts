@@ -66,8 +66,6 @@ export declare class DatePicker implements OnInit, ControlValueAccessor {
     incMinutes(): void;
     decMinutes(): void;
     done(): void;
-    togglePopover(): void;
-    closepopover(): void;
     composeDate(date: Date): string;
     getCurrentWeek(): void;
 }

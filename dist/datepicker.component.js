@@ -62,7 +62,6 @@ var DatePicker = /** @class */ (function () {
             var currentMinValue = Number(_this.minValue);
             if (currentHourValue > 12) {
                 _this.hourValue = 11;
-                _this.timeViewMeridian = "PM";
             }
             if (currentMinValue > 59) {
                 _this.minValue = 59;
@@ -261,7 +260,7 @@ var DatePicker = /** @class */ (function () {
                 this.onChangeCallback(this.date.toString());
             }
             if (this.settings.closeOnSelect) {
-                //this.popover = false;
+                this.popover = false;
                 this.onDateSelect.emit(this.date);
             }
         }
@@ -383,18 +382,18 @@ var DatePicker = /** @class */ (function () {
         this.popover = false;
         this.onDateSelect.emit(this.date);
     };
-    DatePicker.prototype.togglePopover = function () {
-        if (this.popover) {
-            this.closepopover();
-        }
-        else {
-            this.popover = true;
-        }
-    };
-    DatePicker.prototype.closepopover = function () {
-        this.rangeSelected = 0;
-        this.popover = false;
-    };
+    // togglePopover() {
+    //     if (this.popover) {
+    //         this.closepopover();
+    //     }
+    //     else {
+    //         this.popover = true;
+    //     }
+    // }
+    // closepopover() {
+    //     this.rangeSelected = 0;
+    //     this.popover = false;
+    // }
     DatePicker.prototype.composeDate = function (date) {
         return (date.getMonth() + 1) + '-' + date.getDate() + '-' + date.getFullYear();
     };
