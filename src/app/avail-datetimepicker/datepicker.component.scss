@@ -553,6 +553,7 @@ body{
     .cuppa-btn-group{
         font-size: 22px;
         font-weight: 300;
+        color: #ccc;
     }
     .angular-range-slider{
         height: 5px;
@@ -694,7 +695,6 @@ body{
     padding: 5px 0px;
     font-weight: 400;
 }
-
 .cuppa-btn-group{
     display: inline-flex;
 }
@@ -721,6 +721,10 @@ body{
 .cuppa-btn-group > .button:last-child{
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
+}
+.cuppa-btn-group[_ngcontent-c1] > .button[_ngcontent-c1],
+.wc-date-container[_ngcontent-c8] > span[_ngcontent-c8]{
+    color: #fff !important;
 }
 
 /* Slider CSS*/
