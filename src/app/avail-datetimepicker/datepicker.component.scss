@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
 
-$base-color: #0076C0!important;
+$base-color: #0076C0;
 $secondary-color: #ffffff;
 
 body{
@@ -722,10 +722,7 @@ body{
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
 }
-.cuppa-btn-group[_ngcontent-c1] > .button[_ngcontent-c1],
-.wc-date-container[_ngcontent-c8] > span[_ngcontent-c8]{
-    color: #fff !important;
-}
+
 
 /* Slider CSS*/
 
