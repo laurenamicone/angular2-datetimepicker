@@ -73,13 +73,13 @@
         <div class="time">
             <div class="hour">
                 <span class="fa fa-plus inc-btn" (click)="incHour()"></span>
-                <input type="string" value="{{hourValue}}" [(ngModel)]="hourValue" autofocus/>
+                <input type="string" value="{{hourValue}}" [(ngModel)]="hourValue"  (keydown.arrowdown) = "decHour()" (keydown.arrowup) = "incHour()" autofocus/>
                 <span class="fa fa-minus dec-btn" (click)="decHour()"></span>
             </div>
             <div class="time-divider">:</div>
             <div class="minutes">
                 <span class="fa fa-plus inc-btn" (click)="incMinutes()"></span>
-                <input type="string" value="{{minValue}}" [(ngModel)]="minValue" />
+                <input type="string" value="{{minValue}}" [(ngModel)]="minValue" (keydown.arrowdown) = "decMinutes()" (keydown.arrowup) = "incMinutes()"/>
                 <span class="fa fa-minus dec-btn" (click)="decMinutes()"></span>
             </div>
         </div>

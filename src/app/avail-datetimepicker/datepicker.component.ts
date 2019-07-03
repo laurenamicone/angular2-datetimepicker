@@ -65,7 +65,6 @@ export class DatePicker implements OnInit, ControlValueAccessor {
         rangepicker: false
     }
     constructor() {
-
     }
     ngOnInit() {
         this.settings = Object.assign(this.defaultSettings, this.settings);
